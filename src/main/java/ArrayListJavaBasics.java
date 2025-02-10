@@ -16,10 +16,14 @@ public class ArrayListJavaBasics {
         System.out.println("Element " + objectElement + " is in the list: " + isContained);
         return isContained;
     }
+
     public void printElements() {
-        for (ClassForObject item : objectList) {
-            System.out.println(item);
+        int i = 0;
+        do {
+            System.out.println(objectList.get(i));
+            i++;
         }
+        while (i<objectList.size());
     }
 
 

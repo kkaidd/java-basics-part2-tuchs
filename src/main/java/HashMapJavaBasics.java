@@ -8,12 +8,14 @@ public class HashMapJavaBasics {
         objectMap.put(key, objectElement);
     }
 
-    public void removeObject(Integer key, ClassForObject objectElement){
+    public void removeObject(Integer key) {
         objectMap.remove(key);
     }
-    public boolean containsObject(Integer key){
+
+    public boolean containsObject(Integer key) {
         return objectMap.containsKey(key);
     }
+
     public void printElements() {
         objectMap.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
     }
